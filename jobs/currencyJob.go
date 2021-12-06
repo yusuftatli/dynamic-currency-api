@@ -11,7 +11,7 @@ import (
 )
 
 //Calling requests with timer
-func GetCurrencyJob(cfg *models.ProviderConfig) {
+func StartCurrencyJob(cfg *models.ProviderConfig) {
 	httpClient := httpclient.NewClient()
 	currencyProvider := currencyapiclient.NewCurrencyProviderHandler(cfg, httpClient)
 

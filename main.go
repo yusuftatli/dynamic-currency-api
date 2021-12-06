@@ -17,7 +17,7 @@ func main() {
 		log.Panicln("failed to load config")
 	}
 
-	jobs.GetCurrencyJob(cfg)
+	jobs.StartCurrencyJob(cfg)
 
 	InitializeRoutes(env)
 }
